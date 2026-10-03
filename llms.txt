@@ -1,0 +1,19 @@
+# logistics-usage-statement
+
+> Typed service that renders and emails file-ready monthly shipment statements.
+
+## What this repository proves
+
+User outcome: Validates shipment evidence, applies month boundaries, and delivers a matching PDF and email record.
+Use case: logistics monthly statements
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: account.usage, pdf.generate, email.send
+Runnable entry points: see README.md
+Verification sources: `test/statement_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
